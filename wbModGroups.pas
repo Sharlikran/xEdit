@@ -735,7 +735,7 @@ begin
       if IsValid then
         s := 'ModGroup "%s" is valid, but has messages:'
       else
-        s := 'ModGroup "%s" is invalid.';
+        s := 'ModGroup "%s" is invalid:';
       Messages := GetValidationMessages;
       if Length(Messages) > 0 then begin
         wbProgress(s, [mgName]);
